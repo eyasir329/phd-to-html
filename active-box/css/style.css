@@ -1,0 +1,638 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clr {
+    clear: both;
+}
+
+.full-wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+/*==============================
+        common css ends
+===============================*/
+
+.m-30{
+    margin: 0 30px;
+}
+
+.mr-30{
+    margin-right: 30px;
+}
+
+/*==============================
+        spacing css ends
+===============================*/
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url(../fonts/raleway/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'raleway-reg';
+    src: url(../fonts/raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'raleway-light';
+    src: url(../fonts/raleway/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: 'raleway-semi-bold';
+    src: url(../fonts/raleway/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'myriad-pro-reg';
+    src: url(../fonts/raleway/Myriad Pro Regular.ttf);
+}
+
+/*font-family: 'Cardo', serif;*/
+
+/*font-family: 'Open Sans', sans-serif;*/
+
+/*font-family: 'Maven Pro', sans-serif;*/
+
+/*==============================
+        font imports ends
+===============================*/
+
+.menu-bg {
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.menu-bg .menu {
+    height: 100%;
+}
+
+.menu-bg .menu .logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.menu-bg .menu .logo img {
+    width: 100%;
+    padding-top: 38px;
+}
+
+.menu-bg .menu .menu-list {
+    width: 970px;
+    height: 100px;
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul {
+    float: right;
+}
+
+.menu-bg .menu .menu-list ul li {
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul li a {
+    line-height: 100px;
+    padding-left: 60px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    font-family: raleway-bold;
+    transition: all linear 0.4s;
+}
+
+.menu-bg .menu .menu-list ul li a:hover{
+    color: #e84545;
+}
+
+/*==============================
+        menu css ends
+===============================*/
+
+.banner-bg{
+    height: 750px;
+    width: 100%;
+    background: url(../images/banner.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-bg::before{
+    content: '';
+    width: 100%;
+    height: 750px;
+    background: rgba(43, 46, 74, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner-bg .banner{
+    height: 750px;
+    text-align: center;
+}
+
+.banner-bg .banner h1{
+    line-height: 71px;
+    font-size: 65px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 150px;
+    color: #fff;
+    padding-top: 256px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.banner-bg .banner p{
+    font-size: 22px;
+    line-height: 33px;
+    color: #fff;
+    font-family: raleway-reg;
+    padding: 0 126px 0;
+    padding-top: 42px;
+    padding-bottom: 76px;
+}
+
+.banner-bg .banner a{
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+    font-family: raleway-semi-bold;
+    background: #e84545;
+    padding: 19px 54px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+}
+
+.banner-bg .banner a:hover{
+    color: #e84545;
+    background: #fff;
+}
+
+/*==============================
+        banner css ends
+===============================*/
+
+.service-bg{
+    height: 520px;
+    background: #fff;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.service-bg .service{
+    height: 520px;
+}
+
+.service-bg .service .service-item{
+    height: 184px;
+    width: 370px;
+    float: left;
+    margin-bottom: 76px;
+    text-align: center;
+}
+
+.service-bg .service .service-item h5{
+    font-family: raleway-bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #2d3033;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.service-bg .service .service-item p{
+    font-family: raleway-reg;
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 21px;
+    padding: 0 30px;
+}
+
+
+
+/*==============================
+        services css ends
+===============================*/
+
+.gallery-bg{
+    height: 700px;
+}
+
+.gallery-bg .gallery-item{
+    height: 50%;
+    width: 25%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.gallery-bg .gallery-item img{
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-bg .gallery-item .gallery-overlay{
+    height: 100%;
+    width: 100%;
+    background: #e84545;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all linear 0.4s;
+}
+
+.gallery-bg .gallery-item:hover .gallery-overlay{
+    left: 0;
+}
+
+.gallery-bg .gallery-item .gallery-overlay .overlay-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.gallery-bg .gallery-item .gallery-overlay .overlay-text h6{
+    font-family: raleway-bold;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.gallery-bg .gallery-item .gallery-overlay .overlay-text p{
+    font-family: raleway-reg;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+
+
+/*==============================
+        project css ends
+===============================*/
+
+.team-bg{
+    height: 580px;
+    margin: 100px 0 100px;
+}
+
+.team-bg .team{
+    height: 580px;
+}
+
+.team-bg .team .team-item{
+    height: 580px;
+    width: 270px;
+    float: left;
+}
+
+.team-bg .team .team-item img{
+    height: 270px;
+}
+
+.team-bg .team .team-item h2{
+    text-transform: capitalize;
+    font-family: raleway-reg;
+    font-size: 22px;
+    color: #2d3033;
+    padding-top: 30px;
+}
+
+.team-bg .team .team-item h5{
+    text-transform: uppercase;
+    font-family: raleway-reg;
+    font-size: 13px;
+    color: #e84545;
+    padding-top: 15px;
+}
+
+.team-bg .team .team-item p{
+    font-family: raleway-reg;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c7279;
+    padding-top: 15px;
+}
+
+.team-bg .team .team-item ul{
+    margin-top: 30px;
+}
+
+.team-bg .team .team-item ul li{
+    float: left;
+}
+
+.team-bg .team .team-item ul li a{
+    color: #6c7279;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #6c7279; 
+    transition: all linear 0.4s;
+}
+
+.team-bg .team .team-item ul li a:hover{
+    color: #fff;
+    background: #e84545;
+}
+
+
+    
+
+/*==============================
+        team css ends
+===============================*/
+
+.feedback-bg{
+    height: 500px;
+    position: relative;
+    background: #53354a;
+}
+
+.feedback-bg::before{
+    content: '';
+    background: url(../images/feedback.jpg) no-repeat center /cover;
+    height: 500px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.feedback-bg .feedback{
+    height: 500px;
+    z-index: 1;
+}
+
+.feedback-bg .feedback .feedback-text{
+   width: 500px;
+   height: 500px;
+   float: right;
+   position: relative;
+}
+
+.feedback-bg .feedback .feedback-text q{
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    line-height: 42px;
+    font-size: 36px;
+    color: #fff;
+    padding-top: 115px;
+    display: inline-block;
+}
+
+.feedback-bg .feedback .feedback-text h6{
+    font-family: raleway-bold;
+    line-height: 21px;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 28px;
+}
+
+.feedback-bg .feedback .feedback-text ul{
+    padding-top: 63px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feedback-bg .feedback .feedback-text ul li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.31);
+    float: left;
+    margin-right: 8px;
+}
+
+.feedback-bg .feedback .feedback-text ul li:last-child{
+    margin-right: 0;
+}
+
+.feedback-bg .feedback .feedback-text ul .active{
+    background: #fff;
+}
+
+
+/*==============================
+        feedback css ends
+===============================*/
+
+.download-bg{
+    height: 140px;
+    background: #fff;
+    margin: 100px 0 100px;
+}
+
+.download-bg .download{
+    height: 140px;
+    text-align: center;
+}
+
+.download-bg .download p{
+    font-family: raleway-light;
+    font-size: 28px;
+    line-height: 21px;
+    color: #2d3033;
+}
+
+.download-bg .download h5{
+    font-family: raleway-bold;
+    font-size: 13px;
+    line-height: 21px;
+    color: #2d3033;
+    text-transform: uppercase;
+    padding-top: 22px;
+    padding-bottom: 40px;
+}
+
+.download-bg .download a{
+    font-family: raleway-semi-bild;
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 18px 84px;
+    background: #e84545;
+    transition: all linear 0.4s;
+}
+
+.download-bg .download a:hover{
+    color: #e84545;
+    background: #fff;
+    border: 1px solid #e84545;
+}
+
+
+
+/*==============================
+        download css ends
+===============================*/
+
+.footer-top-bg{
+    height: 250px;
+    background: #3a3e64;
+}
+
+.footer-top-bg .footer-top{
+    height: 250px;
+}
+
+.footer-top-bg .footer-top .footer-item{
+    height: 250px;
+    width: 370px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.footer-top-bg .footer-top .footer-item h5{
+    font-family: raleway-bold;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 70px;
+    padding-bottom: 22px;
+}
+
+.footer-top-bg .footer-top .footer-item p{
+    font-family: raleway-reg;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 22.5px;
+}
+
+.footer-top-bg .footer-top .footer-item .addrese{
+    padding: 0 100px;
+}
+
+.footer-top-bg .footer-top .footer-item ul{
+    position: absolute;
+    padding-top: 22px;
+    left: 120px;
+}
+
+.footer-top-bg .footer-top .footer-item ul li{
+    float: left;
+}
+
+.footer-top-bg .footer-top .footer-item ul li a{
+    color: rgba(255, 255, 255, 0.5);
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 7px;
+    transition: all linear 0.4s;
+}
+
+.footer-top-bg .footer-top .footer-item ul li a:hover{
+    color: #e84545;
+    background: #fff;
+    border: 1px solid #e84545;
+}
+
+
+.footer-top-bg .footer-top .footer-item ul li:first-child a{
+    margin-left: 0px;
+}
+
+
+/*==============================
+        footer top css ends
+===============================*/
+
+.footer-bottom-bg{
+    height: 95px;
+    background: #313454;
+}
+
+.footer-bottom-bg .footer-bottom{
+    height: 95px;
+    text-align: center;
+}
+
+.footer-bottom-bg .footer-bottom p{
+    font-size: 14px;
+    line-height: 22.5px;
+    color: #808080;
+    font-family: myriad-pro-reg;
+    padding-left: 425px;
+    padding-right: 425px;
+    padding-top: 28px;
+}
+
+.footer-bottom-bg .footer-bottom p i{
+    color: #e84545;
+}
+
+.footer-bottom-bg .footer-bottom p a{
+    color: #fff;
+    transition: all linear 0.4s;
+}
+
+.footer-bottom-bg .footer-bottom p a:hover{
+    color: #e84545;
+}
+
+/*==============================
+        footer top css ends
+===============================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
